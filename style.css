@@ -40,6 +40,14 @@ button:hover {
   border-radius: 15px;
   object-fit: cover;
 }
+h1 {
+  text-shadow: 0 0 10px #ff2d91, 0 0 20px #ff2d91, 0 0 30px #ff2d91;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff2d91; }
+  to { text-shadow: 0 0 30px #ff2d91, 0 0 60px #ff2d91; }
+}
 
 .gallery img:hover {
   transform: scale(1.1);
