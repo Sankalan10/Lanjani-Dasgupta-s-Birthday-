@@ -1,13 +1,46 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  background: #f0e6ff;
+  background: linear-gradient(135deg, #f0e6ff, #ffe6f0);
   margin: 0;
   padding: 2rem;
 }
-.hidden { display: none; }
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+.hidden {
+  display: none;
+}
 button {
   padding: 1rem 2rem;
+  margin-top: 20px;
   font-size: 1.2rem;
   cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #ff5cad;
+  color: white;
+  transition: transform 0.2s;
+}
+button:hover {
+  transform: scale(1.05);
+  background: #ff2d91;
+}
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.1);
 }
