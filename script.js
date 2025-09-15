@@ -3,7 +3,6 @@ const openBtn = document.getElementById('openBtn');
 const gift = document.getElementById('gift');
 const bgm = document.getElementById('bgm');
 const playMusic = document.getElementById('playMusic');
-const countdown = document.getElementById("countdown");
 
 // 🎉 Gift open logic
 openBtn.addEventListener('click', () => {
